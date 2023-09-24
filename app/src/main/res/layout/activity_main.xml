@@ -38,7 +38,6 @@
         android:id="@+id/linearLayout"
         android:layout_width="330dp"
         android:layout_height="360dp"
-
         android:layout_marginTop="32dp"
         android:background="@drawable/shape_main"
         app:layout_constraintEnd_toEndOf="parent"
