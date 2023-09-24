@@ -111,7 +111,7 @@
         android:layout_alignParentTop="true"
         android:gravity="top"
         android:text="@string/p"
-        android:textAppearance="@style/p"
+        android:textAppearance="@style/some_id2"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/wed"
         app:layout_constraintEnd_toEndOf="parent"

@@ -11,46 +11,119 @@
 
     <!-- Auto layout, variables, and unit scale are not yet supported -->
 
-    <TextView
-        android:id="@+id/some_id7"
-        android:layout_width="28dp"
-        android:layout_height="15dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:elevation="3dp"
-        android:fontFamily="@font/kimm_bold"
-        android:gravity="top"
-        android:lineHeight="14sp"
-        android:text="@string/some_id7"
-        android:textAppearance="@style/some_id7"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_49"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_49"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_49"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_49" />
 
-    <View
-        android:id="@+id/rectangle_49"
-        android:layout_width="113dp"
-        android:layout_height="36dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="4dp"
-        android:background="@drawable/gradation_purple_button"
-        android:elevation="2dp"
+    <FrameLayout
+        android:id="@+id/buy_list_frame"
+        android:layout_width="114dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="260dp"
         app:layout_constraintBottom_toTopOf="@+id/rectangle_45"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.795" />
+        app:layout_constraintTop_toBottomOf="@+id/component_4">
 
-    <!-- Auto layout, variables, and unit scale are not yet supported -->
 
-    <!-- Auto layout, variables, and unit scale are not yet supported -->
+        <ImageButton
+            android:id="@+id/buy_list_button"
+            android:layout_width="114dp"
+            android:layout_height="50dp"
+            android:background="#0CFFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/kimm_bold"
+            android:src="@drawable/purple_button"
+            android:text="구매"
+            android:textColor="#1D0251"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="502dp" />
 
-    <!-- Auto layout, variables, and unit scale are not yet supported -->
+        <TextView
+            android:id="@+id/buy_list_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/kimm_bold"
+            android:text="구매"
+            android:textColor="#1D0251"
+            android:textSize="18sp" />
+    </FrameLayout>
 
-    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <FrameLayout
+        android:id="@+id/sell_list_frame"
+        android:layout_width="114dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle_45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buy_list_frame"
+        app:layout_constraintTop_toBottomOf="@+id/component_4">
+
+        <ImageButton
+            android:id="@+id/sell_list_button"
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+            android:background="#0CFFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/kimm_bold"
+            android:src="@drawable/gray_button"
+            android:text="판매"
+            android:textColor="#1D0251"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="150dp"
+            tools:layout_editor_absoluteY="498dp" />
+
+        <TextView
+            android:id="@+id/sell_list_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/kimm_bold"
+            android:text="판매"
+            android:textColor="#1D0251"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/outstanding_list_frame"
+        android:layout_width="114dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle_45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sell_list_frame"
+        app:layout_constraintTop_toBottomOf="@+id/component_4">
+
+        <ImageButton
+            android:id="@+id/outstanding_list_button"
+            android:layout_width="114dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="31dp"
+            android:background="#0CFFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/kimm_bold"
+            android:src="@drawable/gray_button"
+            android:text="미체결"
+            android:textColor="#1D0251"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sell_list_frame"
+            app:layout_constraintTop_toTopOf="@+id/buy_list_frame" />
+
+        <TextView
+            android:id="@+id/outstanding_list_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/kimm_bold"
+            android:text="미체결"
+            android:textColor="#1D0251"
+            android:textSize="18sp" />
+    </FrameLayout>
+
 
     <ImageView
         android:id="@+id/fi_sr_menu_"
@@ -58,6 +131,8 @@
         android:layout_height="24dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="8dp"
         android:clipToOutline="true"
         android:src="@drawable/menu"
         app:layout_constraintBottom_toTopOf="@+id/rectangle_45"
@@ -67,6 +142,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.371" />
 
+
     <ImageView
         android:id="@+id/component_4"
         android:layout_width="224dp"
@@ -75,29 +151,15 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginTop="40dp"
         android:layout_marginBottom="10dp"
         android:src="@drawable/gray_titlebar"
         app:layout_constraintBottom_toTopOf="@+id/rectangle_48"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintHorizontal_bias="0.693"
         app:layout_constraintStart_toEndOf="@+id/fi_sr_menu_"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.966" />
-
-    <View
-        android:id="@+id/rectangle_44"
-        android:layout_width="126dp"
-        android:layout_height="36dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="6dp"
-        android:background="@drawable/gray_button"
-        app:layout_constraintBottom_toTopOf="@+id/rectangle_45"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.795" />
 
     <View
         android:id="@+id/rectangle_45"
@@ -113,21 +175,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.22" />
 
-    <View
-        android:id="@+id/rectangle_48"
-        android:layout_width="127dp"
-        android:layout_height="36dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/gray_button"
-        app:layout_constraintBottom_toTopOf="@+id/rectangle_45"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.795" />
 
-    <!-- Auto layout, variables, and unit scale are not yet supported -->
 
 
     <View
@@ -144,75 +192,6 @@
         app:layout_constraintTop_toBottomOf="@+id/rectangle_45"
         app:layout_constraintVertical_bias="0.016" />
 
-    <View
-        android:id="@+id/rectangle_46_2"
-        android:layout_width="342dp"
-        android:layout_height="46dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/list"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.627"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rectangle_46"
-        app:layout_constraintVertical_bias="0.016" />
-
-    <View
-        android:id="@+id/rectangle_46_3"
-        android:layout_width="342dp"
-        android:layout_height="46dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/list"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.627"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rectangle_46_4"
-        app:layout_constraintVertical_bias="0.024" />
-
-    <View
-        android:id="@+id/rectangle_46_4"
-        android:layout_width="342dp"
-        android:layout_height="46dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/list"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.627"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rectangle_46_5"
-        app:layout_constraintVertical_bias="0.02" />
-
-    <View
-        android:id="@+id/rectangle_46_5"
-        android:layout_width="342dp"
-        android:layout_height="46dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/list"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.627"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rectangle_46_2"
-        app:layout_constraintVertical_bias="0.02" />
-
-    <View
-        android:id="@+id/rectangle_46_9"
-        android:layout_width="342dp"
-        android:layout_height="46dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/list"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.627"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rectangle_46_3"
-        app:layout_constraintVertical_bias="0.04" />
 
     <TextView
         android:id="@+id/some_id6"
@@ -233,42 +212,9 @@
         app:layout_constraintTop_toTopOf="@+id/component_4" />
 
 
-    <TextView
-        android:id="@+id/some_id8"
-        android:layout_width="28dp"
-        android:layout_height="15dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:fontFamily="@font/kimm_bold"
-        android:gravity="top"
-        android:lineHeight="14sp"
-        android:text="@string/some_id8"
-        android:textAppearance="@style/some_id7"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_48"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_48"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_48"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_48" />
-
     <!-- Auto layout, variables, and unit scale are not yet supported -->
 
     <!-- Auto layout, variables, and unit scale are not yet supported -->
-
-    <TextView
-        android:id="@+id/some_id9"
-        android:layout_width="41dp"
-        android:layout_height="15dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:fontFamily="@font/kimm_bold"
-        android:gravity="top"
-        android:lineHeight="14sp"
-        android:text="@string/some_id9"
-        android:textAppearance="@style/some_id7"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_44"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_44"
-        app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_44"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_44" />
 
     <TextView
         android:id="@+id/kwh"
@@ -281,7 +227,7 @@
         android:layout_marginStart="5dp"
         android:fontFamily="@font/kimm_bold"
         android:gravity="top"
-        android:lineHeight="10sp"
+        android:lineHeight="13sp"
         android:text="@string/kwh"
         android:textAppearance="@style/kwh"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_45"
@@ -301,7 +247,7 @@
         android:layout_alignParentBottom="true"
         android:fontFamily="@font/kimm_bold"
         android:gravity="top"
-        android:lineHeight="10sp"
+        android:lineHeight="13sp"
         android:text="@string/won"
         android:textAppearance="@style/kwh"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_45"
@@ -393,306 +339,8 @@
         app:layout_constraintTop_toTopOf="@+id/rectangle_46"
         app:layout_constraintVertical_bias="0.555" />
 
-    <TextView
-        android:id="@+id/kwh3"
-        android:layout_width="50dp"
-        android:layout_height="17dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:fontFamily="@font/kimm_bold"
-        android:gravity="top"
-        android:lineHeight="10sp"
-        android:text="@string/kwh"
 
-        android:textAppearance="@style/kwh"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_46_2"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_46_2"
-        app:layout_constraintHorizontal_bias="0.089"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_46_2"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_46_2" />
 
-    <TextView
-        android:id="@+id/won3"
-        android:layout_width="46dp"
-        android:layout_height="18dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:fontFamily="@font/kimm_bold"
-        android:gravity="top"
-        android:lineHeight="10sp"
-        android:text="@string/won"
-        android:textAppearance="@style/kwh"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_46_2"
-        app:layout_constraintEnd_toStartOf="@+id/moment3"
-        app:layout_constraintHorizontal_bias="0.643"
-        app:layout_constraintStart_toEndOf="@+id/kwh3"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_46_2"
-        app:layout_constraintVertical_bias="0.535" />
 
-    <TextView
-        android:id="@+id/moment3"
-        android:layout_width="124dp"
-        android:layout_height="16dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:fontFamily="@font/kimm_bold"
-        android:gravity="top"
-        android:lineHeight="10sp"
-        android:text="@string/moment"
-        android:textAppearance="@style/kwh"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_46_2"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_46_2"
-        app:layout_constraintHorizontal_bias="0.954"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_46_2"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_46_2"
-        app:layout_constraintVertical_bias="0.566" />
-
-    <TextView
-        android:id="@+id/kwh4"
-        android:layout_width="53dp"
-        android:layout_height="15dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:fontFamily="@font/kimm_bold"
-        android:gravity="top"
-        android:lineHeight="10sp"
-        android:text="@string/kwh"
-
-        android:textAppearance="@style/kwh"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_46_5"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_46_5"
-        app:layout_constraintHorizontal_bias="0.089"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_46_5"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_46_5"
-        app:layout_constraintVertical_bias="0.483" />
-
-    <TextView
-        android:id="@+id/won4"
-        android:layout_width="46dp"
-        android:layout_height="18dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:fontFamily="@font/kimm_bold"
-        android:gravity="top"
-        android:lineHeight="10sp"
-        android:text="@string/won"
-        android:textAppearance="@style/kwh"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_46_5"
-        app:layout_constraintEnd_toStartOf="@+id/moment4"
-        app:layout_constraintHorizontal_bias="0.614"
-        app:layout_constraintStart_toEndOf="@+id/kwh4"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_46_5"
-        app:layout_constraintVertical_bias="0.571" />
-
-    <TextView
-        android:id="@+id/moment4"
-        android:layout_width="124dp"
-        android:layout_height="16dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:fontFamily="@font/kimm_bold"
-        android:gravity="top"
-        android:lineHeight="10sp"
-        android:text="@string/moment"
-        android:textAppearance="@style/kwh"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_46_5"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_46_5"
-        app:layout_constraintHorizontal_bias="0.949"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_46_5"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_46_5"
-        app:layout_constraintVertical_bias="0.533" />
-
-    <TextView
-        android:id="@+id/kwh5"
-        android:layout_width="53dp"
-        android:layout_height="15dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:fontFamily="@font/kimm_bold"
-        android:gravity="top"
-        android:lineHeight="10sp"
-        android:text="@string/kwh"
-
-        android:textAppearance="@style/kwh"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_46_4"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_46_4"
-        app:layout_constraintHorizontal_bias="0.089"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_46_4"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_46_4"
-        app:layout_constraintVertical_bias="0.548" />
-
-    <TextView
-        android:id="@+id/won5"
-        android:layout_width="46dp"
-        android:layout_height="18dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:fontFamily="@font/kimm_bold"
-        android:gravity="top"
-        android:lineHeight="10sp"
-        android:text="@string/won"
-        android:textAppearance="@style/kwh"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_46_4"
-        app:layout_constraintEnd_toStartOf="@+id/moment5"
-        app:layout_constraintHorizontal_bias="0.638"
-        app:layout_constraintStart_toEndOf="@+id/kwh5"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_46_4" />
-
-    <TextView
-        android:id="@+id/moment5"
-        android:layout_width="124dp"
-        android:layout_height="16dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:fontFamily="@font/kimm_bold"
-        android:gravity="top"
-        android:lineHeight="10sp"
-        android:text="@string/moment"
-        android:textAppearance="@style/kwh"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_46_4"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_46_4"
-        app:layout_constraintHorizontal_bias="0.949"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_46_4"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_46_4"
-        app:layout_constraintVertical_bias="0.533" />
-
-    <TextView
-        android:id="@+id/kwh6"
-        android:layout_width="53dp"
-        android:layout_height="15dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:fontFamily="@font/kimm_bold"
-        android:gravity="top"
-        android:lineHeight="10sp"
-        android:text="@string/kwh"
-
-        android:textAppearance="@style/kwh"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_46_3"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_46_3"
-        app:layout_constraintHorizontal_bias="0.089"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_46_3"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_46_3"
-        app:layout_constraintVertical_bias="0.516" />
-
-    <TextView
-        android:id="@+id/won6"
-        android:layout_width="46dp"
-        android:layout_height="18dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:fontFamily="@font/kimm_bold"
-        android:gravity="top"
-        android:lineHeight="10sp"
-        android:text="@string/won"
-        android:textAppearance="@style/kwh"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_46_3"
-        app:layout_constraintEnd_toStartOf="@+id/moment6"
-        app:layout_constraintHorizontal_bias="0.607"
-        app:layout_constraintStart_toEndOf="@+id/kwh6"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_46_3"
-        app:layout_constraintVertical_bias="0.571" />
-
-    <TextView
-        android:id="@+id/moment6"
-        android:layout_width="124dp"
-        android:layout_height="16dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:fontFamily="@font/kimm_bold"
-        android:gravity="top"
-        android:lineHeight="10sp"
-        android:text="@string/moment"
-        android:textAppearance="@style/kwh"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_46_3"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_46_3"
-        app:layout_constraintHorizontal_bias="0.954"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_46_3"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_46_3" />
-
-    <TextView
-        android:id="@+id/kwh7"
-        android:layout_width="53dp"
-        android:layout_height="15dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:fontFamily="@font/kimm_bold"
-        android:gravity="top"
-        android:lineHeight="10sp"
-        android:text="@string/kwh"
-
-        android:textAppearance="@style/kwh"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_46_9"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_46_9"
-        app:layout_constraintHorizontal_bias="0.089"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_46_9"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_46_9"
-        app:layout_constraintVertical_bias="0.516" />
-
-    <TextView
-        android:id="@+id/won7"
-        android:layout_width="46dp"
-        android:layout_height="18dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:fontFamily="@font/kimm_bold"
-        android:gravity="top"
-        android:lineHeight="10sp"
-        android:text="@string/won"
-        android:textAppearance="@style/kwh"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_46_9"
-        app:layout_constraintEnd_toStartOf="@+id/moment7"
-        app:layout_constraintHorizontal_bias="0.614"
-        app:layout_constraintStart_toEndOf="@+id/kwh7"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_46_9"
-        app:layout_constraintVertical_bias="0.571" />
-
-    <TextView
-        android:id="@+id/moment7"
-        android:layout_width="124dp"
-        android:layout_height="16dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:fontFamily="@font/kimm_bold"
-        android:gravity="top"
-        android:lineHeight="10sp"
-        android:text="@string/moment"
-        android:textAppearance="@style/kwh"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_46_9"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_46_9"
-        app:layout_constraintHorizontal_bias="0.949"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_46_9"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_46_9"
-        app:layout_constraintVertical_bias="0.533" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

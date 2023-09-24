@@ -80,7 +80,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/kimm_bold"
         android:gravity="top"
-        android:lineHeight="20sp"
+        android:lineHeight="23sp"
         android:text="@string/signup"
         android:textAppearance="@style/signup"
         app:layout_constraintBottom_toTopOf="@+id/rectangle_11"
