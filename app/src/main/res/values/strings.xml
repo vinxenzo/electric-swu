@@ -3,4 +3,135 @@
     <string name="power_cost">155</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="hi_user">
+        Hi, user
+    </string>
+
+    <string name="some_id">
+        \u00ED\u0094\u0084\u00EB\u00A1\u009C\u00ED\u0095\u0084
+    </string>
+
+    <string name="some_id2">
+        <u>연동 계좌:123-456-789101</u>
+    </string>
+
+    <string name="p">
+        <u>포인트: 320p</u>
+    </string>
+
+    <string name="wed">
+        2051.04.21 WED
+    </string>
+
+    <string name="some_id3">
+        잔여량
+    </string>
+
+    <string name="some_id4">
+        생산량
+    </string>
+
+    <string name="some_id5">
+        소비량
+    </string>
+
+    <string name="w">
+        300W
+    </string>
+
+    <string name="w2">
+        0W
+    </string>
+
+    <string name="w3">
+        300W
+    </string>
+
+    <string name="some_id6">
+        전력거래현황
+    </string>
+
+    <string name="some_id7">
+        구매
+    </string>
+
+    <string name="some_id8">
+        판매
+    </string>
+
+    <string name="some_id9">
+        미체결
+    </string>
+
+    <string name="kwh">
+        453kwh
+    </string>
+
+    <string name="won">
+        1293원
+    </string>
+
+    <string name="moment">
+        2023.09.21 18:00:32
+    </string>
+
+    <string name="signup">
+        회원가입
+    </string>
+
+    <string name="signup_name">
+        이름
+    </string>
+
+    <string name="signup_id">
+        아이디
+    </string>
+
+    <string name="signup_pw">
+        비밀번호
+    </string>
+
+    <string name="signup_addr">
+        주소
+    </string>
+
+    <string name="speaddr">
+        상세주소
+    </string>
+
+    <string name="next">
+        다음페이지
+    </string>
+
+    <string name="signup_login">
+        로그인
+    </string>
+
+    <string name="gosignup">
+        회원가입
+    </string>
+
+    <string name="signup_ess">
+        ESS 정보
+    </string>
+
+    <string name="signup_payment">
+        결제 수단 등록
+    </string>
+
+    <string name="signup_payinfo">
+        신용/체크 카드
+    </string>
+
+    <string name="signup_paychoi">
+        카드사 선택
+    </string>
+
+    <string name="signup_agreement">
+        약관동의
+    </string>
+
+
+
 </resources>
